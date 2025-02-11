@@ -11,7 +11,7 @@ client = OpenAI()
 # 문서 적재 및 첫 부분 표시
 import pandas as pd
 
-file_path = 'sales_data.csv'
+file_path = 'data/sales_data.csv'
 sales_data = pd.read_csv(file_path)
 
 sales_data
@@ -344,13 +344,13 @@ bullet_p.font.color.rgb = RGBColor(255, 255, 255)
 bullet_p.line_spacing = 1.5
 """
 
-dalle_img_path = '04_19.png'
+dalle_img_path = ' 꽃말의비밀정원_태진.png'
 dalle_file = client.files.create(
     file=open(dalle_img_path, "rb"),
     purpose='assistants'
 )
 
-image_path = '04_18.png'
+image_path = '태진_도서_판매'
 plot_file = client.files.create(
     file=open(image_path, 'rb'),
     purpose='assistants'
