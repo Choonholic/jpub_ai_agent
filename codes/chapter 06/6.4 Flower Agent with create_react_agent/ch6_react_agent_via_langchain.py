@@ -50,6 +50,7 @@ agent_executor.invoke({
     "input": "현재 시장에서 장미의 일반적인 구매 가격은 얼마인가요?\n이 가격에 마진을 5%를 추가하려면 어떻게 가격을 책정해야 합니까?"
 })
 
+# 한국어로 답변을 받기 위한 템플릿
 template = (
     '최선을 다해 다음 질문에 답해 주세요. 능력이 부족할 경우, 아래 도구를 사용할 수 있습니다:\n\n'
     '{tools}\n\nUse the following format:\n\n'
